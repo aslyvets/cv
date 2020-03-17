@@ -1,0 +1,151 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+\usepackage{multicol,setspace}
+\usepackage{amsmath,amssymb}
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\large \scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{4pt}{4pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\centering{\underline{\LARGE Oleksii (Alex) \textsc{Slyvets}}}\\ % Your name
+\centering{\Large Senior Software Engineer}
+
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+\textsc{Place and Date of Birth:} & Ukraine  | 05 November 1990 \\
+\textsc{Address:} & Valparaisostr. 15, 22761 Hamburg, Germany \\
+\textsc{Phone:} & +49-1590-6422317\\
+\textsc{Skype:} & slivets.alexey \\
+\textsc{LinkedIn:} & \href{https://www.linkedin.com/in/oslyvets/}{Alex Slyvets} \\
+\textsc{email:} & \href{mailto:slivets.aleksay@gmail.com}{slivets.aleksay@gmail.com} \\
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY OF QUALIFICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Summary of Qualifications}
+\begin{itemize}
+
+\setlength\itemsep{-0.40em}
+\item 6+ years experience of Software Engineering with \textbf{DevOps} using  \textbf{Agile} methodologies;
+\item Solid knowledge of \textbf{Java Platform} and Object-oriented software architectures;
+\item Vast experience in refactoring a monolith using \textbf{clean code} and \textbf{SOLID} principles.
+
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{tabular}{r|p{11cm}}
+
+
+%---------------------Smaato Senior-----------------------\
+\emph{Current}	&	\underline{\emph{Senior Software Engineer} at \href{https://www.smaato.com/company/}{Smaato}, Hamburg, Germany }\\
+				&	\small{
+						Design and implementation of the microservices using \textbf{AWS}.
+						Performance tuning of high load application using \textbf{Flame graphs} and \textbf{JMH}.
+						Roadmap planning and high-level estimation. Distribution of the tasks within a team.
+						Knowledge sharing via Engineering meetups and coding Dojo.
+						Introduce tracing framework based on \textbf{AOP} with zero performance penalty.
+						Improve CI stability and reduce build time by \textbf{50\%}.
+						Moving monitoring to \textbf{Terraform}.
+						Build \textbf{Jenkins2} pipeline for deployment without downtime.
+						Took a part in migration from \textbf{Aerospike} to \textbf{Redis}.
+						Found the JVM crash of \textbf{Java 11} using \textbf{Gatling}.
+					} \\
+\multicolumn{2}{c}{} \\
+
+
+%---------------------Smaato Dev-----------------------\
+\textsc{Mar 2017} & 	\underline{\emph{Software Engineer} at \href{https://www.smaato.com/company/}{Smaato}, Hamburg, Germany }\\
+\textsc{Aug 2018} & 	\small{
+						Created a framework with  \textbf{Kotlin DSL} for \textbf{UA testing}.
+						Took a part in migration from \textbf{Kafka} to \textbf{Kinesis}.
+						Migrated CI from \textbf{Jenkins} to \textbf{Jenkins2}. Introduced usage of \textbf{AssertJ}.
+					}\\
+\multicolumn{2}{c}{} \\
+
+
+%--------------------GGS------------------------\
+\textsc{Jan 2016}	&	\underline{\emph{Server Developer} at \href{https://www.goodgamestudios.com/}{Good Game Studios}, Hamburg, Germany} \\
+\textsc{Mar 2017}	& 	\small{
+						Maintain and update live servers/databases of \href{https://empire.goodgamestudios.com/}{Good Game Empire} 
+						and  \href{https://www.goodgamestudios.com/games/empire-four-kingdoms-app/}{ Empire: Four Kingdoms}.  
+						Develop  \textbf{Groovy scripts} to live the servers control and performance optimization. 
+						Introduced unit and integration tests into the legacy system which resulted in decreased bug counter by 30\%. 
+					} \\
+\multicolumn{2}{c}{} \\
+
+
+%-----------------------Go IT-------------------------
+\textsc{Nov 2015}	&	\underline{\emph{Java Mentor} at \href{http://goit.ua/}{GoIT}, online} \\
+\textsc{Oct 2016}	& 	\small{
+						Development of the online course roadmap.
+						Introduced production examples and best practices of \textbf{Agile} software development to the students. 
+						Online consultancy, code review, project planning.
+					}\\
+\multicolumn{2}{c}{} \\
+
+
+%-----------------------2K Group-------------------------
+\textsc{Aug 2013}	&	\underline{\emph{Java Developer} at \href{http://www.2kgroup.com/}{2K Group}, Kyev, Ukraine} \\
+\textsc{Sep 2015}	&	\small{
+						Develop server-side for web-slot games for \href{https://www.vegasslotsonline.com/amaya/}{Amaya gaming}.
+						Setup UNIX servers for web applications (DB, web server, etc).
+						Develop QA-automation tools with \textbf{AngularJS}.
+					}\\
+\multicolumn{2}{c}{} \\
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{r|p{10cm}}
+\textsc{2008-2014} & Master’s degree of Molecular biotechnology, \textbf{National Technical University of Ukraine} 
+\textit{"Kyiv Polytechnic Institute"}, Kyev, Ukraine \\
+
+
+\end{tabular}
+\end{document}
